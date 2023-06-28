@@ -6,6 +6,3 @@ class Hello(models.Model):
 class Hey(models.Model):
     'Generated Model'
     sddsd = models.BigIntegerField()
-class Lee(models.Model):
-    'Generated Model'
-    sddsd = models.BigIntegerField()

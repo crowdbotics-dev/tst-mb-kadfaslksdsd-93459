@@ -1,4 +1,4 @@
-from .models import Hello
+from .models import Hello, Hey
 from django.views.generic import CreateView, UpdateView, DetailView, ListView
 from django.shortcuts import render
 
