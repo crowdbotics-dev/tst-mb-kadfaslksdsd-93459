@@ -3,6 +3,3 @@ from django.db import models
 class Hello(models.Model):
     'Generated Model'
     daddssd = models.BigIntegerField()
-class Hey(models.Model):
-    'Generated Model'
-    sddsd = models.BigIntegerField()

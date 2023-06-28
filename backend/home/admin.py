@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Hello,Hey
+from .models import Hello
 admin.site.register(Hello)
-admin.site.register(Hey)
 
 # Register your models here.
