@@ -8,44 +8,23 @@ function api_docs_schema_retrieve(payload) {
     params: { lang: payload.lang }
   })
 }
-function api_v1_hello_list(payload) {
-  return tstmbkadfaslksdsdAPI.get(`/api/v1/hello/`)
+function api_v1_hi_list(payload) {
+  return tstmbkadfaslksdsdAPI.get(`/api/v1/hi/`)
 }
-function api_v1_hello_create(payload) {
-  return tstmbkadfaslksdsdAPI.post(`/api/v1/hello/`, payload.data)
+function api_v1_hi_create(payload) {
+  return tstmbkadfaslksdsdAPI.post(`/api/v1/hi/`, payload.data)
 }
-function api_v1_hello_retrieve(payload) {
-  return tstmbkadfaslksdsdAPI.get(`/api/v1/hello/${payload.id}/`)
+function api_v1_hi_retrieve(payload) {
+  return tstmbkadfaslksdsdAPI.get(`/api/v1/hi/${payload.id}/`)
 }
-function api_v1_hello_update(payload) {
-  return tstmbkadfaslksdsdAPI.put(`/api/v1/hello/${payload.id}/`, payload.data)
+function api_v1_hi_update(payload) {
+  return tstmbkadfaslksdsdAPI.put(`/api/v1/hi/${payload.id}/`, payload.data)
 }
-function api_v1_hello_partial_update(payload) {
-  return tstmbkadfaslksdsdAPI.patch(
-    `/api/v1/hello/${payload.id}/`,
-    payload.data
-  )
+function api_v1_hi_partial_update(payload) {
+  return tstmbkadfaslksdsdAPI.patch(`/api/v1/hi/${payload.id}/`, payload.data)
 }
-function api_v1_hello_destroy(payload) {
-  return tstmbkadfaslksdsdAPI.delete(`/api/v1/hello/${payload.id}/`)
-}
-function api_v1_hey_list(payload) {
-  return tstmbkadfaslksdsdAPI.get(`/api/v1/hey/`)
-}
-function api_v1_hey_create(payload) {
-  return tstmbkadfaslksdsdAPI.post(`/api/v1/hey/`, payload.data)
-}
-function api_v1_hey_retrieve(payload) {
-  return tstmbkadfaslksdsdAPI.get(`/api/v1/hey/${payload.id}/`)
-}
-function api_v1_hey_update(payload) {
-  return tstmbkadfaslksdsdAPI.put(`/api/v1/hey/${payload.id}/`, payload.data)
-}
-function api_v1_hey_partial_update(payload) {
-  return tstmbkadfaslksdsdAPI.patch(`/api/v1/hey/${payload.id}/`, payload.data)
-}
-function api_v1_hey_destroy(payload) {
-  return tstmbkadfaslksdsdAPI.delete(`/api/v1/hey/${payload.id}/`)
+function api_v1_hi_destroy(payload) {
+  return tstmbkadfaslksdsdAPI.delete(`/api/v1/hi/${payload.id}/`)
 }
 function api_v1_login_create(payload) {
   return tstmbkadfaslksdsdAPI.post(`/api/v1/login/`, payload.data)
@@ -94,18 +73,12 @@ function rest_auth_user_partial_update(payload) {
 }
 export const apiService = {
   api_docs_schema_retrieve,
-  api_v1_hello_list,
-  api_v1_hello_create,
-  api_v1_hello_retrieve,
-  api_v1_hello_update,
-  api_v1_hello_partial_update,
-  api_v1_hello_destroy,
-  api_v1_hey_list,
-  api_v1_hey_create,
-  api_v1_hey_retrieve,
-  api_v1_hey_update,
-  api_v1_hey_partial_update,
-  api_v1_hey_destroy,
+  api_v1_hi_list,
+  api_v1_hi_create,
+  api_v1_hi_retrieve,
+  api_v1_hi_update,
+  api_v1_hi_partial_update,
+  api_v1_hi_destroy,
   api_v1_login_create,
   api_v1_signup_create,
   rest_auth_login_create,
