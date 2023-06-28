@@ -1,5 +1,5 @@
 from django.conf import settings
 from django.db import models
-class Hello(models.Model):
+class Hi(models.Model):
     'Generated Model'
-    daddssd = models.BigIntegerField()
+    dssd = models.BigIntegerField()
