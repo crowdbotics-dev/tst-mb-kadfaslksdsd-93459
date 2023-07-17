@@ -12,28 +12,28 @@ function api_v1_hi_list(payload) {
   return tstmbkadfaslksdsdAPI.get(`/api/v1/hi/`)
 }
 function api_v1_hi_create(payload) {
-  return tstmbkadfaslksdsdAPI.post(`/api/v1/hi/`, payload.data)
+  return tstmbkadfaslksdsdAPI.post(`/api/v1/hi/`, payload)
 }
 function api_v1_hi_retrieve(payload) {
   return tstmbkadfaslksdsdAPI.get(`/api/v1/hi/${payload.id}/`)
 }
 function api_v1_hi_update(payload) {
-  return tstmbkadfaslksdsdAPI.put(`/api/v1/hi/${payload.id}/`, payload.data)
+  return tstmbkadfaslksdsdAPI.put(`/api/v1/hi/${payload.id}/`, payload)
 }
 function api_v1_hi_partial_update(payload) {
-  return tstmbkadfaslksdsdAPI.patch(`/api/v1/hi/${payload.id}/`, payload.data)
+  return tstmbkadfaslksdsdAPI.patch(`/api/v1/hi/${payload.id}/`, payload)
 }
 function api_v1_hi_destroy(payload) {
   return tstmbkadfaslksdsdAPI.delete(`/api/v1/hi/${payload.id}/`)
 }
 function api_v1_login_create(payload) {
-  return tstmbkadfaslksdsdAPI.post(`/api/v1/login/`, payload.data)
+  return tstmbkadfaslksdsdAPI.post(`/api/v1/login/`, payload)
 }
 function api_v1_signup_create(payload) {
-  return tstmbkadfaslksdsdAPI.post(`/api/v1/signup/`, payload.data)
+  return tstmbkadfaslksdsdAPI.post(`/api/v1/signup/`, payload)
 }
 function rest_auth_login_create(payload) {
-  return tstmbkadfaslksdsdAPI.post(`/rest-auth/login/`, payload.data)
+  return tstmbkadfaslksdsdAPI.post(`/rest-auth/login/`, payload)
 }
 function rest_auth_logout_retrieve(payload) {
   return tstmbkadfaslksdsdAPI.get(`/rest-auth/logout/`)
@@ -42,34 +42,34 @@ function rest_auth_logout_create(payload) {
   return tstmbkadfaslksdsdAPI.post(`/rest-auth/logout/`)
 }
 function rest_auth_password_change_create(payload) {
-  return tstmbkadfaslksdsdAPI.post(`/rest-auth/password/change/`, payload.data)
+  return tstmbkadfaslksdsdAPI.post(`/rest-auth/password/change/`, payload)
 }
 function rest_auth_password_reset_create(payload) {
-  return tstmbkadfaslksdsdAPI.post(`/rest-auth/password/reset/`, payload.data)
+  return tstmbkadfaslksdsdAPI.post(`/rest-auth/password/reset/`, payload)
 }
 function rest_auth_password_reset_confirm_create(payload) {
   return tstmbkadfaslksdsdAPI.post(
     `/rest-auth/password/reset/confirm/`,
-    payload.data
+    payload
   )
 }
 function rest_auth_registration_create(payload) {
-  return tstmbkadfaslksdsdAPI.post(`/rest-auth/registration/`, payload.data)
+  return tstmbkadfaslksdsdAPI.post(`/rest-auth/registration/`, payload)
 }
 function rest_auth_registration_verify_email_create(payload) {
   return tstmbkadfaslksdsdAPI.post(
     `/rest-auth/registration/verify-email/`,
-    payload.data
+    payload
   )
 }
 function rest_auth_user_retrieve(payload) {
   return tstmbkadfaslksdsdAPI.get(`/rest-auth/user/`)
 }
 function rest_auth_user_update(payload) {
-  return tstmbkadfaslksdsdAPI.put(`/rest-auth/user/`, payload.data)
+  return tstmbkadfaslksdsdAPI.put(`/rest-auth/user/`, payload)
 }
 function rest_auth_user_partial_update(payload) {
-  return tstmbkadfaslksdsdAPI.patch(`/rest-auth/user/`, payload.data)
+  return tstmbkadfaslksdsdAPI.patch(`/rest-auth/user/`, payload)
 }
 export const apiService = {
   api_docs_schema_retrieve,
