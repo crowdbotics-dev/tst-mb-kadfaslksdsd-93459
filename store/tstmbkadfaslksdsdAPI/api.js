@@ -8,6 +8,24 @@ function api_docs_schema_retrieve(payload) {
     params: { lang: payload.lang }
   })
 }
+function api_v1_hello_list(payload) {
+  return tstmbkadfaslksdsdAPI.get(`/api/v1/hello/`)
+}
+function api_v1_hello_create(payload) {
+  return tstmbkadfaslksdsdAPI.post(`/api/v1/hello/`, payload)
+}
+function api_v1_hello_retrieve(payload) {
+  return tstmbkadfaslksdsdAPI.get(`/api/v1/hello/${payload.id}/`)
+}
+function api_v1_hello_update(payload) {
+  return tstmbkadfaslksdsdAPI.put(`/api/v1/hello/${payload.id}/`, payload)
+}
+function api_v1_hello_partial_update(payload) {
+  return tstmbkadfaslksdsdAPI.patch(`/api/v1/hello/${payload.id}/`, payload)
+}
+function api_v1_hello_destroy(payload) {
+  return tstmbkadfaslksdsdAPI.delete(`/api/v1/hello/${payload.id}/`)
+}
 function api_v1_hi_list(payload) {
   return tstmbkadfaslksdsdAPI.get(`/api/v1/hi/`)
 }
@@ -73,6 +91,12 @@ function rest_auth_user_partial_update(payload) {
 }
 export const apiService = {
   api_docs_schema_retrieve,
+  api_v1_hello_list,
+  api_v1_hello_create,
+  api_v1_hello_retrieve,
+  api_v1_hello_update,
+  api_v1_hello_partial_update,
+  api_v1_hello_destroy,
   api_v1_hi_list,
   api_v1_hi_create,
   api_v1_hi_retrieve,
